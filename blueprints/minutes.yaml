@@ -1,0 +1,22 @@
+title: Minutes
+@extends:
+    type: article
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        header.minutes:
+          type: tab
+          title: ✴ Minutes
+          icon: folder
+          text: Enter details for this person
+
+          fields:
+
+            .description:
+              type: text
+              label: Description
+              help: Help for the Description
+              size: medium
