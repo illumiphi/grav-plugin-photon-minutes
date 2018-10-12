@@ -86,13 +86,13 @@ class PhotonMinutesPlugin extends Plugin
         // styles
         if ($this->config->get('plugins.photon-minutes.built_in_css')) {
           $css = 'plugin://photon-minutes/assets/minutes.css';
-          $assets->addCss($css);
+          $assets->addCss($css, 100, false, 'photon-plugins' );
         }
 
         // scripts
         if ($this->config->get('plugins.photon-minutes.built_in_js')) {
           $js = 'plugin://photon-minutes/assets/minutes.js';
-          $assets->addJs($js);
+          $assets->addJs($js, 100, false, 'defer', 'photon-plugins' );
         }
 
 
